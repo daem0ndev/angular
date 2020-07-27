@@ -4872,9 +4872,13 @@ describe('Integration', () => {
            activations: any[] = [];
            deactivations: any[] = [];
 
-           recordActivate(component: any): void { this.activations.push(component); }
+           recordActivate(component: any): void {
+             this.activations.push(component);
+           }
 
-           recordDeactivate(component: any): void { this.deactivations.push(component); }
+           recordDeactivate(component: any): void {
+             this.deactivations.push(component);
+           }
          }
 
          TestBed.configureTestingModule({declarations: [Container]});
